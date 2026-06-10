@@ -8,7 +8,9 @@ See Archon's intro: [What are report components?](https://www.archon.gg/wow/arti
 
 ## Components
 
-### `terminate-interrupts.js`
+Each component lives in its own folder.
+
+### `terminate-interrupts/`
 
 For **Midnight Falls (Mythic)** — `encounterId 3183`.
 
@@ -26,9 +28,9 @@ Features:
 - Tunable constants at the top: `MAX_DEATHS_PER_PULL`, `MAX_CAST_MS`, `SPAWN_ABILITY`, …
 
 **Usage:** open a Midnight Falls Mythic report on Archon/Warcraftlogs, create a new report
-component, paste the contents of `terminate-interrupts.js`, and run.
+component, paste the contents of `terminate-interrupts/terminate-interrupts.js`, and run.
 
-### `terminate-interrupts.debug.js`
+#### `terminate-interrupts/terminate-interrupts.debug.js`
 
 A throwaway **discovery build** that returns a `JsonTree`. The Archon/WCL runtime API is largely
 undocumented, so this probes event categories, dumps sample event/actor shapes, and introspects
